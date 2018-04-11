@@ -1,0 +1,9 @@
+# 开启重写
+RewriteEngine on
+
+# 如果访问的不是一个目录，也不是一个文件，则默认访问 index.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule . index.php
+	
