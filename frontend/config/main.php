@@ -60,6 +60,9 @@ return [
             ],*/
             // 'suffix' => '.html',        // 添加 .html 后缀，现在不用
         ],
+/*        'assetManager' => [
+            'linkAssets' => true,   // 创建 link 到资源目录，win下不可用
+        ],*/
 
     ],
     'params' => $params,

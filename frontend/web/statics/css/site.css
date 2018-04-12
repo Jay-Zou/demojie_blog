@@ -129,3 +129,31 @@ a.desc:after {
     width: 32px;
     height: 32px;
 }
+
+/*页面标题*/
+.page-header{
+    margin-top: 0px;
+}
+
+.page-header h1{
+    font-size: 18px;
+    margin: 4px 0;
+    display: inline-block;
+}
+
+/*创建文章标题*/
+.box-title{
+    color: #333;
+    font-size: 18px;
+    border-bottom: 2px solid #cbcbcb;
+    padding-bottom: 5px;
+}
+/*创建文章表单*/
+.panel-body{
+    padding: 15px 0 5px 0;
+}
+
+/*标签输入框*/
+.bootstrap-tagsinput{
+    width: 100%;
+}

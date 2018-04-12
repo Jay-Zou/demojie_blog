@@ -33,5 +33,17 @@ return [
 
 
     'post' => '文章',
+    'ID' => 'ID',
+    'Title' => '标题',
+    'Summary' => '摘要',
+    'Content' => '内容',
+    'Label Img' => '标签图',
+    'Cat ID' => '分类',
+    'User ID' => '用户',
+    'User Name' => '用户名',
+    'Is Valid' => '是否有效',
+    'Created At' => '创建时间',
+    'Updated At' => '修改时间',
+    'Tags' => '标签',
 
 ];

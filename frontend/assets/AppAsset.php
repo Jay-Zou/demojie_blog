@@ -15,8 +15,10 @@ class AppAsset extends AssetBundle
         'statics/css/site.css',
         'statics/css/font-awesome-4.7.0/css/font-awesome.css',
     ];
+
     public $js = [
     ];
+
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
