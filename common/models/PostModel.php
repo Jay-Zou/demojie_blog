@@ -22,6 +22,8 @@ use Yii;
  */
 class PostModel extends BaseModel
 {
+    const IS_VALID = 1; // 发布
+    const NO_VALID = 0; // 未发布
     /**
      * @inheritdoc
      */
@@ -39,7 +41,7 @@ class PostModel extends BaseModel
             [['content'], 'string'],
             [['cat_id', 'user_id', 'created_at', 'updated_at'], 'integer'],
             [['title', 'summary', 'label_img', 'user_name'], 'string', 'max' => 255],
-            [['is_valid'], 'string', 'max' => 1],
+            [['is_valid'], 'integer', 'max' => 1],
         ];
     }
 
@@ -62,4 +64,24 @@ class PostModel extends BaseModel
             'updated_at' => Yii::t('common', 'Updated At'),
         ];
     }
+
+    /**
+     * 关联关系，获取文章所关联的标签
+     */
+    public function getRelate()
+    {
+        // 一对多
+        return $this->hasMany(RelationPostTagModel::class, ['post_id' => 'id']);
+    }
+
+    /**
+     * 关联关系，获取文章的扩展属性
+     * @return \yii\db\ActiveQuery
+     */
+    public function getExtend()
+    {
+        return $this->hasOne(PostExtendModel::class, ['post_id' => 'id']);
+    }
+
+
 }

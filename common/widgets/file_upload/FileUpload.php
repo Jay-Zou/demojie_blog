@@ -35,8 +35,6 @@ class FileUpload extends InputWidget
     {
         $this->registerClientScript();        
         if ($this->hasModel()) {
-            $a1 = Html::getAttributeName($this->attribute);
-            $a2 = Html::getInputId($this->model, $this->attribute);
             $inputName = Html::getInputName($this->model, $this->attribute);
             $inputValue = Html::getAttributeValue($this->model, $this->attribute);
             return $this->render('index',[

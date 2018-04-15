@@ -42,7 +42,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 ]) ?>
 
 
-                <?= $form->field($model, 'label_img')->widget('common\widgets\input_tags\InputTags',[
+                <?= $form->field($model, 'tags')->widget('common\widgets\input_tags\InputTags',[
                     'config'=>[
                     ]
                 ]) ?>

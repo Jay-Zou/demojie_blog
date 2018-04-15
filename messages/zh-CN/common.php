@@ -31,6 +31,13 @@ return [
     'This email address has already been taken.' => '邮箱已存在！',
     'Two times the password is not consitent.' => '两次输入的密码不一致！',
 
+    'Please fill out the following fields to login:' => '请填写下列信息进行登录：',
+    'If you forgot your password you can' => '如果你忘记密码，你可以',
+    'reset it' => '重置它',
+
+    'Username' => '用户名',
+    'Password' => '密码',
+    'RememberMe' => '记住我',
 
     'post' => '文章',
     'ID' => 'ID',
@@ -45,5 +52,11 @@ return [
     'Created At' => '创建时间',
     'Updated At' => '修改时间',
     'Tags' => '标签',
+
+    'Post ID' => '文章ID',
+    'Tag ID' => '标签ID',
+
+    'Tag Name' => '标签名称',
+    'Post Num' => '文章数',
 
 ];

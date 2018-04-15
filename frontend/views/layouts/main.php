@@ -87,8 +87,9 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
-    <!-- 面包屑 -->
+
     <div class="container">
+        <!-- 面包屑 -->
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
